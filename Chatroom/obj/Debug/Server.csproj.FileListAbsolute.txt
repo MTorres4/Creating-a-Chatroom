@@ -1,1 +1,2 @@
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
