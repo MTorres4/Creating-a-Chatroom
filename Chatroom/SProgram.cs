@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chatroom
 {
-    class Program
+    class SProgram
     {
         static void Main(string[] args)
         {
