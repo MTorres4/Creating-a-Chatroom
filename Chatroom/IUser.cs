@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chatroom
 {
-    interface IUser
+    public interface IUser
     {
-        void Notify();
+        void NotifyUsers();
+        //void NotifyUsers(IUser user) what is the difference?
     }
 }

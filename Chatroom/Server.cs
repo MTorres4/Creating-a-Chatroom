@@ -13,10 +13,13 @@ namespace Chatroom
     class Server : IUser , ILoggable
     {
         public string serverIP;
+        ILoggable log;
+        //client.username = client.username;
+        //client.username = username;
         //private Dictionary<client.username, client.username> users = new Dictionary <client.username, client.username>();
-        public Server()
+        public Server(ILoggable log)
         {
-
+            this.log = log;
         }
 
         public void AcceptClient()
@@ -50,9 +53,19 @@ namespace Chatroom
             //users.Add(user);
         }
 
-        public void Notify()
+        public void JustJoined()
         {
+            NotifyUsers();
+        }
 
+        public void NotifyUsers()
+        {
+            //foreach(KeyValuePair<client.username> Kvp in users)
+            {
+                //user.Notify(user);
+                //may not need above
+                //CWL($"{user.Username} has joined the chatroom"); Need method to send for display
+            }
         }
 
         public void WriteTo()
