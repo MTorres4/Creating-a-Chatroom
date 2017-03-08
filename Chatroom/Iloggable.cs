@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chatroom
 {
-    interface Iloggable
+    interface ILoggable
     {
         void WriteTo();
     }

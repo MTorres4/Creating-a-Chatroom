@@ -8,7 +8,7 @@ using System.Net;
 
 namespace Chatroom
 {
-    class Client
+    class Client : IGui
     {
         public string myIP;
         public Client()
@@ -26,11 +26,11 @@ namespace Chatroom
         public void ConnectToServer()
         {
             //establishes connection with server
-            TcpClient client = new TcpClient(myIP, 5600);
-            Console.WriteLine("[Try to connect to server...]");
+            TcpClient client = new TcpClient(myIP, 2007);
+            Console.WriteLine("[Trying to connect to server...]");
             //sends data to server
             NetworkStream n = client.GetStream();
-            Console.WriteLine("[Connect]");
+            Console.WriteLine("[Connected]");
             string ch = Console.ReadLine();
             byte[] message = Encoding.Unicode.GetBytes(ch);
             n.Write(message, 0, message.Length);

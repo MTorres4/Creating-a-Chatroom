@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Iloggable.cs" />
+    <Compile Include="ILoggable.cs" />
     <Compile Include="IUser.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="SProgram.cs" />

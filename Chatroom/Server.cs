@@ -10,9 +10,10 @@ using System.Net;
 
 namespace Chatroom
 {
-    class Server
+    class Server : IUser , ILoggable
     {
         public string serverIP;
+        //private Dictionary<client.username, client.username> users = new Dictionary <client.username, client.username>();
         public Server()
         {
 
@@ -28,8 +29,8 @@ namespace Chatroom
 
             //Listens for client to connect
             IPAddress ipAddress = IPAddress.Parse(serverIP);
-            TcpListener listen = new TcpListener(ipAddress, 5600);
-            Console.WriteLine("[Listenning...]");
+            TcpListener listen = new TcpListener(ipAddress, 2007);
+            Console.WriteLine("[Listening...]");
             listen.Start();
             TcpClient client = listen.AcceptTcpClient();
             Console.WriteLine("[Client connected]");
@@ -39,9 +40,24 @@ namespace Chatroom
             byte[] buffer = new byte[client.ReceiveBufferSize];
             int data = stream.Read(buffer, 0, client.ReceiveBufferSize);
             string ch = Encoding.Unicode.GetString(buffer, 0, data);
-            Console.WriteLine("Message Received:" + ch);
+            Console.WriteLine($" Message Received: {ch}");
             client.Close();
             Console.ReadKey();
+        }
+
+        public void JoinChatroom()
+        {
+            //users.Add(user);
+        }
+
+        public void Notify()
+        {
+
+        }
+
+        public void WriteTo()
+        {
+
         }
     }
 }
