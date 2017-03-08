@@ -8,6 +8,7 @@ namespace Chatroom
 {
     interface ILoggable
     {
-        void WriteTo();
+        List<string> MessageLog { get; set; }
+        void WriteTo(string input);
     }
 }

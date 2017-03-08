@@ -10,7 +10,8 @@ namespace Chatroom
     {
         static void Main(string[] args)
         {
-            Server server = new Server();
+            Log log = new Log();
+            Server server = new Server(log);
             server.AcceptClient();
         }
     }
