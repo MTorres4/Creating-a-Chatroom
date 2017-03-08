@@ -45,17 +45,21 @@ namespace Chatroom
         public void ConnectToServer()
         {
             //establishes connection with server
-            TcpClient client = new TcpClient(myIP, 2007);
+            TcpClient client = new TcpClient("192.168.0.128", 2007);
             Console.WriteLine("[Trying to connect to server...]");
             //sends data to server
             NetworkStream n = client.GetStream();
             Console.WriteLine("[Connected]");
-            string ch = Console.ReadLine();
-            byte[] message = Encoding.Unicode.GetBytes(ch);
-            n.Write(message, 0, message.Length);
+            send(n, "Lao");
             Console.WriteLine("--------------------sent---------------");
             client.Close();
             Console.ReadKey();
+        }
+
+        public void send(NetworkStream n,string generic)
+        {
+            byte[] message = Encoding.Unicode.GetBytes(generic);
+            n.Write(message, 0, message.Length);
         }
 
         public void DisplayNotification()

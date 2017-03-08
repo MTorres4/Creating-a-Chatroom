@@ -32,6 +32,7 @@ namespace Chatroom
             // Get the IP
             serverIP = Dns.GetHostEntry(hostName).AddressList[1].ToString();
 
+<<<<<<< HEAD
             //Listens for client to connect
             IPAddress ipAddress = IPAddress.Parse(serverIP);
             TcpListener listen = new TcpListener(ipAddress, 2007);
@@ -40,8 +41,33 @@ namespace Chatroom
             TcpClient client = listen.AcceptTcpClient();
             //TcpClient client2 = listen.AcceptTcpClient();
             Console.WriteLine("[Client connected]");
+=======
+            
+>>>>>>> d2b9d052b2ecb45fb72ddb6c8b9649f5ffdd524e
 
             //accepts data from client
+            
+            
+        }
+
+        public void ListenForClient()
+        {
+            //Listens for client to connect
+            //  IPAddress ipAddress = IPAddress.Parse(serverIP);
+            while (true)
+            {
+                TcpListener listen = new TcpListener(IPAddress.Any, 2007);
+                Console.WriteLine("[Listening...]");
+                listen.Start();
+                TcpClient client = listen.AcceptTcpClient();
+                clientbob(client);
+                Console.WriteLine("[Client connected]");
+            }
+            
+        }
+        public void clientbob(TcpClient client)
+        {
+
             NetworkStream stream = client.GetStream();
             byte[] buffer = new byte[client.ReceiveBufferSize];
             int data = stream.Read(buffer, 0, client.ReceiveBufferSize);
@@ -58,7 +84,6 @@ namespace Chatroom
             //client2.Close();
             //Console.ReadKey();
         }
-
         public void JoinChatroom()
         {
             //users.Add(user);

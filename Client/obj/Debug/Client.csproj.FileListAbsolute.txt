@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.exe.config
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.exe
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.pdb
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\obj\Debug\Client.exe
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\obj\Debug\Client.pdb
+=======
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.exe.config
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.pdb
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.pdb
+>>>>>>> d2b9d052b2ecb45fb72ddb6c8b9649f5ffdd524e
