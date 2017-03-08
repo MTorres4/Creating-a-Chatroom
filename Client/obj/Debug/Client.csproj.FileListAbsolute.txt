@@ -1,0 +1,5 @@
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.exe.config
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.exe
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\bin\Debug\Client.pdb
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\obj\Debug\Client.exe
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Client\obj\Debug\Client.pdb

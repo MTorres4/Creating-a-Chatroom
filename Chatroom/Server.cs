@@ -18,7 +18,7 @@ namespace Chatroom
         ILoggable log;
         //client.username = client.username;
         //client.username = username;
-        //private Dictionary<client.username, client.username> users = new Dictionary <client.username, client.username>();
+        //private Dictionary<Username, Username> users = new Dictionary <Username, Username>();
         public Server(ILoggable log)
         {
             this.log = log;
@@ -38,6 +38,7 @@ namespace Chatroom
             Console.WriteLine("[Listening...]");
             listen.Start();
             TcpClient client = listen.AcceptTcpClient();
+            //TcpClient client2 = listen.AcceptTcpClient();
             Console.WriteLine("[Client connected]");
 
             //accepts data from client
@@ -48,6 +49,14 @@ namespace Chatroom
             Console.WriteLine($" Message Received: {ch}");
             client.Close();
             Console.ReadKey();
+
+            //NetworkStream stream2 = client2.GetStream();
+            //byte[] buffer2 = new byte[client2.ReceiveBufferSize];
+            //int data2 = stream.Read(buffer2, 0, client2.ReceiveBufferSize);
+            //string ch2 = Encoding.Unicode.GetString(buffer2, 0, data2);
+            //Console.WriteLine($" Message Received: {ch2}");
+            //client2.Close();
+            //Console.ReadKey();
         }
 
         public void JoinChatroom()
