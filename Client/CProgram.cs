@@ -10,6 +10,9 @@ namespace Chatroom
     {
         static void Main(string[] args)
         {
+            Client client = new Client();
+            client.GetIpAddress();
+            client.ConnectToServer();
         }
     }
 }

@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chatroom
 {
-    class SProgram
+    interface IUser
     {
-        static void Main(string[] args)
-        {
-            Server server = new Server();
-            server.AcceptClient();
-        }
     }
 }
