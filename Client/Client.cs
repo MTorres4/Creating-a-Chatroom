@@ -11,8 +11,8 @@ namespace Chatroom
     class Client : IGui
     {
         public string myIP;
-        private string username;
-        private string messagelog;
+        private string username ="";
+        private string messagelog = "";
         public string Username
         {
             get
