@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Chatroom
 {
-    interface IGui
+    public interface IGui
     {
-        
+        string Username { get; }
+        void DisplayNotification();
+        string MessageLog { get; }
     }
 }
