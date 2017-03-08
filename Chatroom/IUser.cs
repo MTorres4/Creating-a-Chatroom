@@ -8,5 +8,6 @@ namespace Chatroom
 {
     interface IUser
     {
+        void Notify();
     }
 }
