@@ -3,7 +3,15 @@ C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.confi
 C:\Users\nraug\Documents\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Server.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.pdb
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.exe
+C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.pdb
+=======
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.pdb
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.exe
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.pdb
+>>>>>>> d2b9d052b2ecb45fb72ddb6c8b9649f5ffdd524e
