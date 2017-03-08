@@ -13,7 +13,7 @@ namespace Chatroom
     class Server : IUser
     {
         public Queue<string> messages = new Queue<string>();
-
+        public TcpClient client;
         public string serverIP;
         ILoggable log;
         //client.username = client.username;
@@ -46,7 +46,7 @@ namespace Chatroom
             
         }
 
-        public void ListenForClient()
+        public TcpClient ListenForClient()
         {
             //Listens for client to connect
             //  IPAddress ipAddress = IPAddress.Parse(serverIP);
@@ -55,15 +55,14 @@ namespace Chatroom
                 TcpListener listen = new TcpListener(IPAddress.Any, 2007);
                 Console.WriteLine("[Listening...]");
                 listen.Start();
-                TcpClient client = listen.AcceptTcpClient();
-                clientbob(client);
+                client = listen.AcceptTcpClient();
                 Console.WriteLine("[Client connected]");
+                
             }
             
         }
         public void clientbob(TcpClient client)
         {
-
             NetworkStream stream = client.GetStream();
             byte[] buffer = new byte[client.ReceiveBufferSize];
             int data = stream.Read(buffer, 0, client.ReceiveBufferSize);
