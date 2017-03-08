@@ -11,10 +11,29 @@ namespace Chatroom
     class Client : IGui
     {
         public string myIP;
+        private string username;
+        private string messagelog;
+        public string Username
+        {
+            get
+            {
+                return username;
+            }
+        }
+
+        public string MessageLog
+        {
+            get
+            {
+                return messagelog;
+            }
+        }
+
         public Client()
         {
 
         }
+
 
         public void GetIpAddress()
         {
@@ -39,6 +58,9 @@ namespace Chatroom
             Console.ReadKey();
         }
 
-
+        public void DisplayNotification()
+        {
+            Console.WriteLine($"{Username} has joined the chatroom...");
+        }
     }
 }
