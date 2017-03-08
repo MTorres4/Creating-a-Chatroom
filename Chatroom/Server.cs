@@ -10,7 +10,7 @@ using System.Net;
 
 namespace Chatroom
 {
-    class Server : IUser , ILoggable
+    class Server : IUser
     {
         public Queue<string> messages = new Queue<string>();
 
@@ -26,7 +26,7 @@ namespace Chatroom
 
         public void AcceptClient()
         {
-            // Retrive the Name of HOST
+            // Retrieve the Name of HOST
             string hostName = Dns.GetHostName();
 
             // Get the IP
@@ -70,10 +70,9 @@ namespace Chatroom
             }
         }
 
-        public void WriteTo()
+        public void WriteToLog(string receivedMessage)
         {
-            List<string> log = new List<string>();
-
+            log.WriteTo(receivedMessage);
         }
 
         public void AddToQueue(string receivedMessage)

@@ -38,5 +38,7 @@ namespace Chatroom
             client.Close();
             Console.ReadKey();
         }
+
+
     }
 }
