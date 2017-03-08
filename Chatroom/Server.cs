@@ -12,6 +12,8 @@ namespace Chatroom
 {
     class Server : IUser , ILoggable
     {
+        public Queue<string> messages = new Queue<string>();
+
         public string serverIP;
         ILoggable log;
         //client.username = client.username;
@@ -70,7 +72,21 @@ namespace Chatroom
 
         public void WriteTo()
         {
+            List<string> log = new List<string>();
 
+        }
+
+        public void AddToQueue(string receivedMessage)
+        {
+            messages.Enqueue(receivedMessage);
+        }
+
+        public void DisplayMessage()
+        {
+            foreach (string message in messages)
+            {
+                Console.WriteLine(message);
+            }
         }
     }
 }
