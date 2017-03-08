@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,8 @@ namespace Chatroom
             server.AcceptClient();
 
             Task.Run(()=> server.ListenForClient());
+            Task.Run(() => server.clientbob(server.client));
+
 
         }
     }
