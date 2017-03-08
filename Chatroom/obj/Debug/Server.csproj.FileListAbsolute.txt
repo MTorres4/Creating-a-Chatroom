@@ -3,3 +3,7 @@ C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.confi
 C:\Users\nraug\Documents\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
 C:\Users\Marissa\Documents\Visual Studio 2015\Projects\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe.config
 C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\bin\Debug\Chatroom.pdb
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Chatroom\obj\Debug\Chatroom.pdb

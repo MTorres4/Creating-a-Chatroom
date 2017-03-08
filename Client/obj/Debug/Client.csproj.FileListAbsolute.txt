@@ -1,0 +1,6 @@
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.exe.config
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\bin\Debug\Client.pdb
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.exe
+C:\Users\nraug\Desktop\Creating-a-Chatroom\Client\obj\Debug\Client.pdb
